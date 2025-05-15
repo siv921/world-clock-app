@@ -4,43 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
+<link rel="stylesheet" href="src/styles.css">
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>World Clock</h1>
-      </header>
-
+     
       <main>
-        <select id="countries">
+    <div class="select">
+        <select class="select-countries" id="countries">
           <option id="select-country" value="">Select another Country</option>
           <option id="reikjavik" value="reikjavik">Reikjavik</option>
           <option id="bangkok" value="bangkok">Bangkok</option>
           <option id="copenhagen" value="copenhagen">Copenhagen</option>
         </select>
-
+    </div>
+    <h1>World Clock</h1>
         <div id="display-countries">
-          <div id="london">
+          <div class="selected" id="selected-country">
+            Bangkok time
+            <spanid="selected-country-icon">🌧</span>
+          </div>
+          <div class="london" id="london">
             London Wednesday 12th October 2025 12:34:12
             <span id="london-icon">🌧</span>
           </div>
-          <div id="new-york">
+          <div class="new-york" id="new-york">
             New York Wednesday 12th October 2025 12:34:12
             <span id="new-york-icon">🌧</span>
           </div>
-          <div id="sydney">
+          <div class="sydney" id="sydney">
             Sydney Wednesday 12th October 2025 12:34:12
             <span id="sydney-icon">🌧</span>
           </div>
         </div>
       </main>
+    </div>
       <footer>
         Coded by
         <a href="https://github.com/siv921" target="_blank">Anastasia Sivets</a
-        >. It is open-sourced on <a href="" target="_blank">Git Hub</a> and
-        hosted on
+        >. It is open-sourced on
+        <a href="https://github.com/siv921/world-clock-app.git" target="_blank"
+          >Git Hub</a
+        >
+        and hosted on
         <a href="" target="_blank">Netlify</a>
       </footer>
-    </div>
+    
   </body>
 </html>
