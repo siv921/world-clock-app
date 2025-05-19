@@ -4,51 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
-<link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-     
       <main>
-    <div class="select">
-        <select class="select-countries" id="countries">
-          <option id="select-country" value="">Select another Country</option>
-          <option id="reikjavik" value="reikjavik">Reikjavik</option>
-          <option id="bangkok" value="bangkok">Bangkok</option>
-          <option id="copenhagen" value="copenhagen">Copenhagen</option>
-        </select>
-    </div>
-    <h1>World Clock</h1>
+        <div class="select">
+          <select class="select-countries" id="countries">
+            <option id="select-country" value="">Select another Country</option>
+            <option id="local-time" value="local-time">Your Local Time</option>
+            <option id="reykjavik" value="reykjavik">Reykjavik</option>
+            <option id="bangkok" value="bangkok">Bangkok</option>
+            <option id="copenhagen" value="copenhagen">Copenhagen</option>
+          </select>
+        </div>
         <div id="display-countries">
           <div class="selected" id="selected-country">
-            Bangkok time
-            <spanid="selected-country-icon">🌧</span>
+            <span class="city" id="selected-city">
+              <span class="date" id="selected-date"> </span
+            ></span>
+
+            <span class="time" id="selected-time"> </span>
           </div>
           <div class="london" id="london">
-            London Wednesday 12th October 2025 12:34:12
-            <span id="london-icon">🌧</span>
+            <span class="city">
+              London
+              <span class="date" id="date-london"> </span
+            ></span>
+            <span class="time" id="time-london"> </span>
           </div>
+
           <div class="new-york" id="new-york">
-            New York Wednesday 12th October 2025 12:34:12
-            <span id="new-york-icon">🌧</span>
+            <span class="city">
+              New York
+              <span class="date" id="date-new-york"></span
+            ></span>
+
+            <span class="time" id="time-new-york"> </span>
           </div>
           <div class="sydney" id="sydney">
-            Sydney Wednesday 12th October 2025 12:34:12
-            <span id="sydney-icon">🌧</span>
+            <span class="city">
+              Sydney
+              <span class="date" id="date-sydney"> </span
+            ></span>
+
+            <span class="time" id="time-sydney"> </span>
           </div>
         </div>
       </main>
     </div>
-      <footer>
-        Coded by
-        <a href="https://github.com/siv921" target="_blank">Anastasia Sivets</a
-        >. It is open-sourced on
-        <a href="https://github.com/siv921/world-clock-app.git" target="_blank"
-          >Git Hub</a
-        >
-        and hosted on
-        <a href="" target="_blank">Netlify</a>
-      </footer>
-    
+    <footer>
+      Coded by
+      <a href="https://github.com/siv921" target="_blank">Anastasia Sivets</a>.
+      It is open-sourced on
+      <a href="https://github.com/siv921/world-clock-app.git" target="_blank"
+        >Git Hub</a
+      >
+      and hosted on
+      <a href="" target="_blank">Netlify</a>
+    </footer>
+
+    <script src="src/script.js"></script>
   </body>
 </html>
