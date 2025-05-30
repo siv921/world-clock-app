@@ -2,10 +2,6 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-a {
-  color: rgba(33, 33, 33, 0.95);
-}
-
 footer {
   text-align: center;
   margin-top: 30px;
@@ -25,6 +21,15 @@ select {
   width: 550px;
   border-radius: 8px;
   margin-bottom: 30px;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a {
+  color: rgba(33, 33, 33, 0.95);
 }
 
 .container {
