@@ -20,39 +20,35 @@
       <header><h1>World Clock</h1></header>
       <main>
         <div class="select">
-          <select class="select-countries" id="countries">
+          <select class="select-cities" id="cities">
             <option id="select-country" value="">Select another Country</option>
             <option id="local-time" value="local-time">Your Local Time</option>
-            <option id="reykjavik" value="reykjavik">Reykjavik</option>
-            <option id="bangkok" value="bangkok">Bangkok</option>
-            <option id="copenhagen" value="copenhagen">Copenhagen</option>
+            <option id="reykjavik" value="Atlantic/Reykjavik">Reykjavik</option>
+            <option id="bangkok" value="Asia/Bangkok">Bangkok</option>
+            <option id="copenhagen" value="Europe/Copenhagen">
+              Copenhagen
+            </option>
           </select>
         </div>
-        <div id="display-countries">
-          <div class="selected" id="selected-country">
-            <span class="city" id="selected-city"> </span>
-            <div class="date" id="selected-date"></div>
-
-            <span class="time" id="selected-time"> </span>
-          </div>
-          <div class="london" id="london">
-            <span class="city">
+        <div id="display-cities">
+          <div class="city" id="london">
+            <span class="city-name">
               London
               <span class="date" id="date-london"> </span
             ></span>
             <span class="time" id="time-london"> </span>
           </div>
 
-          <div class="new-york" id="new-york">
-            <span class="city">
+          <div class="city" id="new-york">
+            <span class="city-name">
               New York
               <span class="date" id="date-new-york"></span
             ></span>
 
             <span class="time" id="time-new-york"> </span>
           </div>
-          <div class="sydney" id="sydney">
-            <span class="city">
+          <div class="city" id="sydney">
+            <span class="city-name">
               Sydney
               <span class="date" id="date-sydney"> </span
             ></span>

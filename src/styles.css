@@ -39,10 +39,7 @@ select {
   box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px;
 }
 
-.london,
-.new-york,
-.sydney,
-.selected {
+.city {
   border-bottom: 1px solid white;
   width: 550px;
   line-height: 80px;
@@ -56,12 +53,11 @@ select {
   margin: 20px auto;
 }
 
-.sydney:last-child,
-.selected {
+.city:last-child {
   border-bottom: none;
 }
 
-.city {
+.city-name {
   font-size: 32px;
   font-weight: 500;
 }
